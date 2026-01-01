@@ -1,0 +1,1560 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+}
+
+/* Header Styling */
+header {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo h1 {
+    color: #ff9f1c; /* Mango Orange */
+    font-size: 28px;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #ff9f1c;
+}
+
+/* Icons & Buttons */
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-icons i {
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+}
+
+.btn-login {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    border: 1px solid #333;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    background-color: #ff9f1c;
+    border-color: #ff9f1c;
+    color: white;
+}
+
+/* Hero Section Styling */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./images/back_2.png');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    text-decoration: none;
+    background-color: #ff9f1c;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #e08e0b;
+}
+
+
+
+
+
+
+/* --- Features Section --- */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 8%;
+    background-color: #fff;
+    flex-wrap: wrap;
+}
+
+.feature-box {
+    text-align: center;
+    padding: 20px;
+    flex-basis: 30%;
+    min-width: 250px;
+}
+
+.feature-box i {
+    font-size: 40px;
+    color: #3a5a40; /* Leaf Green */
+    margin-bottom: 15px;
+}
+
+.feature-box h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* --- Product Section --- */
+.products {
+    padding: 50px 8%;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    width: 23%; /* 4 cards in a row */
+    min-width: 220px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.product-card .price {
+    color: #ff9f1c;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.btn-add {
+    background-color: #3a5a40;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn-add:hover {
+    background-color: #2c4230;
+}
+
+/* --- Footer Section --- */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 50px 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #444;
+}
+
+.footer-section {
+    flex-basis: 30%;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    color: #ff9f1c;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #bbb;
+    transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: white;
+}
+
+.socials a {
+    color: white;
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 14px;
+    color: #bbb;
+}
+
+
+
+
+
+/* --- Shop Page Specific Styles --- */
+
+/* Page Header Banner */
+.page-header {
+    background-color: #f4f4f4;
+    padding: 40px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.page-header h2 {
+    color: #333;
+    font-size: 30px;
+}
+
+/* Shop Container (Sidebar + Products) */
+.shop-container {
+    display: flex;
+    padding: 40px 5%;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    flex-basis: 20%; /* Sidebar takes 20% width */
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    min-width: 200px;
+}
+
+.filter-group {
+    margin-bottom: 30px;
+}
+
+.filter-group h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ff9f1c;
+    display: inline-block;
+}
+
+.filter-group ul {
+    list-style: none;
+}
+
+.filter-group ul li {
+    margin-bottom: 10px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.price-slider {
+    width: 100%;
+}
+
+/* Product Grid (Main Content) */
+.product-grid {
+    flex-basis: 80%; /* Products take 80% width */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Reusing .product-card but adjusting width for shop page */
+.product-grid .product-card {
+    width: 31%; /* 3 cards in a row */
+    flex-grow: 1;
+}
+
+/* Responsive for Shop Page */
+@media (max-width: 768px) {
+    .shop-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .product-grid {
+        width: 100%;
+    }
+
+    .product-grid .product-card {
+        width: 45%; /* 2 cards in a row on tablet */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-grid .product-card {
+        width: 100%; /* 1 card in a row on mobile */
+    }
+}
+
+
+
+
+
+
+
+/* --- Single Product Details Page --- */
+
+.pro-details-container {
+    display: flex;
+    margin-top: 50px;
+    padding: 0 10%;
+    margin-bottom: 50px;
+}
+
+.single-pro-image {
+    width: 40%;
+    margin-right: 50px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+}
+
+.single-pro-details {
+    width: 50%;
+    padding-top: 20px;
+}
+
+.single-pro-details h6 {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.single-pro-details h4 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.single-pro-details h2 {
+    font-size: 26px;
+    color: #ff9f1c;
+    margin-bottom: 20px;
+}
+
+.single-pro-details input {
+    width: 60px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.single-pro-details input:focus {
+    outline: none;
+}
+
+.single-pro-details .btn-primary {
+    cursor: pointer;
+    border: none;
+}
+
+.stock-status {
+    margin-bottom: 20px;
+}
+
+.badge {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.single-pro-details h4 {
+    margin-top: 30px; 
+    font-size: 20px; 
+    margin-bottom: 10px;
+}
+
+.single-pro-details p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Responsive for Product Details */
+@media (max-width: 768px) {
+    .pro-details-container {
+        flex-direction: column;
+        padding: 0 5%;
+    }
+
+    .single-pro-image {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .single-pro-details {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- Cart Page Styles --- */
+
+#cart {
+    padding: 50px 10%;
+    overflow-x: auto; /* Mobile e table scroll korar jonno */
+}
+
+#cart table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+#cart table img {
+    width: 70px;
+}
+
+#cart table td:nth-child(1) { width: 100px; text-align: center; }
+#cart table td:nth-child(2) { width: 150px; text-align: center; }
+#cart table td:nth-child(3) { width: 250px; text-align: center; }
+#cart table td:nth-child(4), 
+#cart table td:nth-child(5), 
+#cart table td:nth-child(6) { width: 150px; text-align: center; }
+
+#cart table thead {
+    border: 1px solid #e2e9e1;
+    border-left: none;
+    border-right: none;
+}
+
+#cart table thead td {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+}
+
+#cart table tbody tr td {
+    padding-top: 15px;
+}
+
+#cart table tbody td {
+    font-size: 14px;
+}
+
+#cart table tbody td input {
+    width: 50px;
+    padding: 5px;
+}
+
+#cart table tbody td i {
+    color: red;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* --- Cart Totals & Coupon --- */
+#cart-add {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10% 50px;
+    flex-wrap: wrap;
+}
+
+#coupon {
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+#coupon h3, #subtotal h3 {
+    padding-bottom: 15px;
+}
+
+#coupon input {
+    padding: 10px 20px;
+    outline: none;
+    width: 60%;
+    margin-right: 10px;
+    border: 1px solid #e2e9e1;
+}
+
+#subtotal {
+    width: 40%;
+    border: 1px solid #e2e9e1;
+    padding: 30px;
+}
+
+#subtotal table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#subtotal table td {
+    width: 50%;
+    border: 1px solid #e2e9e1;
+    padding: 10px;
+    font-size: 13px;
+}
+
+/* Mobile Responsive for Cart */
+@media (max-width: 768px) {
+    #cart-add {
+        flex-direction: column;
+    }
+    
+    #coupon {
+        width: 100%;
+    }
+    
+    #subtotal {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+/* --- Login & Registration Page --- */
+
+.account-page {
+    padding: 50px 0;
+    background: #e9ecef; /* Light gray background */
+}
+
+.account-page .container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 25px;
+}
+
+.account-page .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.account-page .col-2 {
+    flex-basis: 48%; /* Each box takes almost half width */
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h3 {
+    margin-bottom: 20px;
+    color: #ff9f1c;
+    border-bottom: 2px solid #3a5a40;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.form-container input {
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container input:focus {
+    outline: none;
+    border: 1px solid #ff9f1c;
+}
+
+.form-container .btn-primary {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.form-container a {
+    font-size: 12px;
+    color: #555;
+    text-decoration: none;
+}
+
+.form-container a:hover {
+    color: #ff9f1c;
+    text-decoration: underline;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .account-page .col-2 {
+        flex-basis: 100%; /* Mobile e full width hobe */
+        margin-bottom: 20px;
+    }
+}
+
+
+/* --- Checkout Page Styles --- */
+
+.checkout-container {
+    padding: 50px 10%;
+}
+
+.checkout-container .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Left Side: Billing Form */
+.col-billing {
+    flex-basis: 55%;
+}
+
+.col-billing h3, .col-order h3 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.input-group input, 
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Right Side: Order & Payment */
+.col-order {
+    flex-basis: 40%;
+    background: #f9f9f9;
+    padding: 30px;
+    border: 1px solid #e2e9e1;
+    border-radius: 8px;
+    height: fit-content;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.total-row {
+    font-size: 18px;
+    border-bottom: none;
+    color: #3a5a40;
+}
+
+/* Payment Methods */
+.payment-method {
+    margin-top: 30px;
+}
+
+.payment-option {
+    margin-bottom: 15px;
+}
+
+.payment-option label {
+    font-weight: bold;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+/* Colors for bKash and Nagad */
+.bkash-label { color: #E2136E; } /* bKash Pink */
+.nagad-label { color: #F6921E; } /* Nagad Orange */
+
+.payment-desc {
+    font-size: 12px;
+    color: #666;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+.btn-place-order {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 16px;
+    background-color: #3a5a40;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn-place-order:hover {
+    background-color: #2c4230;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .checkout-container .row {
+        flex-direction: column;
+    }
+    
+    .col-billing, .col-order {
+        flex-basis: 100%;
+    }
+}
+
+
+
+
+
+/* --- Contact Page Styles --- */
+
+.contact-section {
+    padding: 50px 10%;
+    background-color: #fff;
+}
+
+.contact-section .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Contact Details (Left Side) */
+.contact-details {
+    flex-basis: 40%;
+}
+
+.contact-details h3, .contact-form h3 {
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+.contact-details .info-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.contact-details .info-box i {
+    font-size: 24px;
+    color: #ff9f1c; /* Mango Color */
+    margin-right: 20px;
+}
+
+.contact-details .info-box h5 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.contact-details .info-box p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Contact Form (Right Side) */
+.contact-form {
+    flex-basis: 55%;
+    background: #fdfdfd;
+    padding: 30px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form button {
+    width: fit-content;
+}
+
+/* Map Section */
+.map {
+    margin-bottom: 20px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .contact-details, .contact-form {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+
+
+
+
+
+/* --- Blog Page Styles --- */
+
+#blog {
+    padding: 50px 10%;
+}
+
+.blog-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+/* Image on the Left */
+.blog-img {
+    width: 40%;
+    margin-right: 40px;
+}
+
+.blog-img img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Details on the Right */
+.blog-details {
+    width: 50%;
+}
+
+.blog-details h4 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.blog-details p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.blog-details a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #000;
+    font-weight: 700;
+    position: relative;
+    transition: 0.3s;
+}
+
+.blog-details a::after {
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    top: 50%; /* center vertically */
+    right: -60px;
+}
+
+.blog-details a:hover {
+    color: #ff9f1c;
+}
+
+.blog-details a:hover::after {
+    background-color: #ff9f1c;
+}
+
+/* Date Styling (Big text behind/above) */
+.blog-box h1 {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    font-size: 70px;
+    font-weight: 700;
+    color: #c9cbce;
+    z-index: -1; /* Piche thakbe */
+    opacity: 0.5;
+}
+
+/* Mobile Responsive for Blog */
+@media (max-width: 768px) {
+    .blog-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .blog-img {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .blog-details {
+        width: 100%;
+    }
+
+    .blog-box h1 {
+        top: -20px;
+        font-size: 50px;
+    }
+}
+
+
+
+
+
+/* --- About Page Styles --- */
+
+#about-head {
+    display: flex;
+    align-items: center;
+    padding: 50px 10%;
+}
+
+.about-img {
+    width: 50%;
+    margin-right: 40px;
+}
+
+.about-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.about-text {
+    width: 50%;
+}
+
+.about-text h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-text p {
+    font-size: 16px;
+    color: #555;
+    line-height: 24px;
+}
+
+.about-text marquee {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    color: #333;
+    border-radius: 4px;
+}
+
+/* About Video / App Section */
+#about-app {
+    text-align: center;
+    padding: 50px 10%;
+}
+
+#about-app h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+#about-app .video {
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#about-app .video video {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #about-head {
+        flex-direction: column;
+    }
+    .about-img, .about-text {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    #about-app .video {
+        width: 100%;
+    }
+}
+
+
+
+
+
+/* --- MOBILE RESPONSIVE CSS (Professional View) --- */
+
+@media (max-width: 799px) {
+    
+    /* Global Padding Reduction */
+    .section-p1, .hero, .features, .products, .shop-container, .pro-details-container, #cart, .checkout-container, .contact-section, #blog, #about-head {
+        padding: 40px 20px;
+    }
+
+    /* Navbar Styles (Slide out Menu) */
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px; /* Hidden by default */
+        height: 100vh;
+        width: 300px;
+        background-color: #E3E6F3;
+        box-shadow: 0 40px 60px rgba(0,0,0,0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+        z-index: 999;
+    }
+
+    #navbar.active {
+        right: 0; /* Show menu */
+    }
+
+    #navbar li {
+        margin-bottom: 25px;
+    }
+
+    /* Mobile Menu Icons */
+    #mobile-bag, #mobile-login {
+        display: block; /* Show cart/login inside menu text */
+    }
+
+    #mobile-bag a, #mobile-login a {
+        font-size: 16px;
+        font-weight: 600;
+        color: #1a1a1a;
+    }
+
+    /* Hide default header icons on mobile if needed, or keep for quick access */
+    .mobile-header-icons {
+        display: flex;
+        align-items: center;
+    }
+    
+    .mobile-header-icons i {
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+        cursor: pointer;
+    }
+
+    /* Close Button (X) */
+    #close-btn {
+        display: block;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+        text-decoration: none;
+    }
+
+    /* Hero Section */
+    .hero {
+        height: 70vh;
+        background-position: top 30% right 30%;
+    }
+    
+    .hero h2 {
+        font-size: 30px;
+    }
+    
+    .hero p {
+        font-size: 15px;
+    }
+
+    /* Features */
+    .features {
+        justify-content: center;
+    }
+    
+    .feature-box {
+        margin: 15px 0;
+    }
+
+    /* Product Grid (2 items per row on mobile) */
+    .product-container {
+        justify-content: center;
+    }
+
+    .product-card {
+        width: 46%; /* 2 cards side by side */
+        margin: 2%; 
+    }
+    
+    /* Shop Page Sidebar */
+    .shop-container {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    .product-grid .product-card {
+        width: 100%; /* 1 card per row in shop page list */
+    }
+
+    /* Product Details */
+    .pro-details-container {
+        flex-direction: column;
+    }
+    
+    .single-pro-image {
+        width: 100%;
+        margin-right: 0;
+    }
+    
+    .single-pro-details {
+        width: 100%;
+    }
+
+    /* Cart Page */
+    #cart {
+        overflow-x: auto;
+    }
+
+    /* Login & Checkout */
+    .col-2, .col-billing, .col-order, .contact-details, .contact-form, .about-img, .about-text {
+        width: 100%;
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    
+    /* Blog */
+    .blog-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .blog-img {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    
+    .blog-details {
+        width: 100%;
+    }
+}
+
+/* Hide Close Button & Menu Icons on Desktop */
+@media (min-width: 800px) {
+    #close-btn { display: none; }
+    #bar { display: none; }
+    #mobile-bag { display: none; }
+    #mobile-login { display: none; }
+}
+
+
+
+
+/* =========================================
+   ULTIMATE MOBILE BEAUTIFICATION (PREMIUM LOOK)
+   Add this at the very end of style.css
+   ========================================= */
+
+@media (max-width: 799px) {
+
+    /* ১. বডি এবং ফন্ট ঠিক করা */
+    body {
+        background-color: #f8f9fa; /* একদম ধবধবে সাদার বদলে হালকা ছাই রঙ, এতে চোখের আরাম হয় */
+    }
+
+    /* ২. হিরো সেকশন (ব্যানার) সুন্দর করা */
+    .hero {
+        height: 60vh; /* মোবাইলে বেশি লম্বা না করে ৬০% হাইট */
+        background-position: center; /* ছবি মাঝখানে থাকবে */
+        border-bottom-left-radius: 30px; /* নিচে একটু কার্ভ হবে */
+        border-bottom-right-radius: 30px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1); /* নিচে হালকা শ্যাডো */
+    }
+
+    .hero h2 {
+        font-size: 28px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.6); /* লেখার নিচে ছায়া যাতে স্পষ্টভাবে পড়া যায় */
+    }
+
+    .hero p {
+        font-size: 14px;
+        background: rgba(0, 0, 0, 0.4); /* লেখার পেছনে হালকা কালো শেড */
+        padding: 5px 10px;
+        border-radius: 5px;
+        display: inline-block;
+    }
+
+    /* ৩. ফিচার বক্স (আইকনগুলো) কার্ডের মতো করা */
+    .features {
+        gap: 15px;
+        padding-top: 30px;
+    }
+
+    .feature-box {
+        background: #fff;
+        margin: 0; /* আগের মার্জিন রিমুভ */
+        padding: 20px;
+        border-radius: 15px; /* গোল কর্নার */
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05); /* হালকা শ্যাডো */
+        width: 100%; /* পুরো জায়গা নেবে */
+        display: flex; /* আইকন আর লেখা পাশাপাশি আনার জন্য */
+        align-items: center;
+        text-align: left;
+    }
+
+    .feature-box i {
+        font-size: 30px;
+        margin-bottom: 0;
+        margin-right: 15px;
+        background: #e8f5e9; /* আইকনের পেছনে হালকা সবুজ গোল্লা */
+        padding: 10px;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* ৪. প্রোডাক্ট কার্ড (সবচেয়ে গুরুত্বপূর্ণ) */
+    .product-container {
+        padding: 0 10px;
+    }
+
+    .product-card {
+        background: #fff;
+        border: none; /* বর্ডার বাদ দিয়ে শ্যাডো দেব */
+        border-radius: 20px; /* বেশ ভালো রাউন্ড শেপ */
+        box-shadow: 0 8px 20px rgba(0,0,0,0.08); /* সুন্দর ভাসমান শ্যাডো */
+        margin-bottom: 20px;
+        padding: 10px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .product-card img {
+        border-radius: 15px;
+        height: 150px; /* ছবির হাইট ফিক্সড */
+    }
+
+    .product-card h3 {
+        font-size: 16px;
+        margin-top: 10px;
+        font-weight: 700;
+    }
+
+    .product-card .price {
+        font-size: 15px;
+        color: #ff9f1c;
+        font-weight: 800;
+    }
+
+    /* Add to Cart বাটনটা বড় এবং সুন্দর করা */
+    .btn-add {
+        width: 100%;
+        padding: 12px;
+        border-radius: 50px; /* ক্যাপসুল শেপ */
+        font-weight: 700;
+        box-shadow: 0 5px 15px rgba(58, 90, 64, 0.3); /* বাটনের নিচে ছায়া */
+        margin-top: 5px;
+    }
+
+    /* ৫. ইনপুট ফিল্ডগুলো সুন্দর করা (Login/Checkout পেজে) */
+    input, textarea, select {
+        padding: 15px;
+        border-radius: 10px;
+        border: 1px solid #ddd;
+        background: #f9f9f9;
+        font-size: 16px; /* মোবাইলে টাইপ করতে সুবিধা হবে */
+    }
+
+    input:focus {
+        background: #fff;
+        border-color: #ff9f1c;
+    }
+
+    /* ৬. মোবাইল মেনু (Navbar) আরও স্মুথ করা */
+    #navbar {
+        background-color: #fff; /* মেনু সাদা হবে */
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    #navbar li a {
+        font-size: 18px; /* ফন্ট বড় */
+        color: #333;
+    }
+
+    /* Active Link এর ডিজাইন */
+    #navbar li a.active, #navbar li a:hover {
+        color: #ff9f1c;
+        padding-left: 10px; /* হোভার করলে একটু সরে যাবে */
+        border-left: 4px solid #ff9f1c; /* বামে একটা দাগ আসবে */
+    }
+    
+    /* Close Button (X) */
+    #close-btn {
+        background: #f1f1f1;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        color: #ff0000;
+    }
+}
+
+/* --- WhatsApp Floating Button --- */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    background-color: #25d366; /* WhatsApp Green */
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    z-index: 1000; /* সবার উপরে থাকবে */
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.whatsapp-btn:hover {
+    background-color: #128c7e;
+    transform: scale(1.1); /* হোভার করলে একটু বড় হবে */
+}
+
+
+
+/* --- Payment Details Box Styles --- */
+.payment-details-box {
+    background: #f9f9f9;
+    border: 1px dashed #ccc;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    margin-left: 25px; /* রেডিও বাটনের নিচে সুন্দর করে সরে থাকবে */
+}
+
+/* bKash Box Style */
+#bkash-info {
+    border-color: #E2136E;
+    background-color: #fff0f5;
+}
+
+/* Nagad Box Style */
+#nagad-info {
+    border-color: #F6921E;
+    background-color: #fff8e1;
+}
+
+.payment-details-box h4 {
+    font-size: 18px;
+    margin: 5px 0 10px 0;
+    font-family: monospace;
+    background: #fff;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.pay-input {
+    width: 100%;
+    margin-top: 8px;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+
+/* --- Password Show/Hide Style --- */
+.password-box {
+    position: relative; /* আইকন পজিশন করার জন্য */
+    width: 100%;
+    margin-bottom: 15px; /* ইনপুটের নিচের গ্যাপ */
+}
+
+.password-box input {
+    margin-bottom: 0; /* ইনপুটের নিজস্ব মার্জিন সরিয়ে দেওয়া হলো */
+    padding-right: 40px; /* লেখার উপর যেন আইকন না চলে আসে */
+}
+
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%); /* একদম মাঝ বরাবর রাখার জন্য */
+    cursor: pointer;
+    color: #777;
+    font-size: 16px;
+}
+
+/* --- Mobile Logo Text Size Fix --- */
+@media (max-width: 799px) {
+    .logo h1 {
+        font-size: 20px; /* সাইজ ছোট করা হয়েছে */
+        margin-top: 5px;
+    }
+}
+
+
+/* --- OR Divider Style --- */
+.or-divider {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    color: #ccc;
+}
+
+.or-divider::before, .or-divider::after {
+    content: "";
+    flex: 1; /* লাইনটা পুরো জায়গা নেবে */
+    height: 1px;
+    background: #ddd;
+}
+
+.or-divider span {
+    padding: 0 10px; /* লেখার পাশে ফাঁকা জায়গা */
+    font-size: 14px;
+    color: #666;
+    font-weight: bold;
+    text-transform: uppercase;
+}
