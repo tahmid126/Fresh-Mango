@@ -86,12 +86,12 @@
 ### The system is currently web-based and responsive only.
 
 ## 🚀 Future Enhancements
-### AI-based mango quality assessment using image analysis.
-### Integration with courier services such as Pathao or RedX.
-### Bangla language localization for rural farmers.
-### Native Android and iOS mobile applications.
-### Advanced analytics dashboard for sellers and admin.
+AI-based mango quality assessment using image analysis.
+Integration with courier services such as Pathao or RedX.
+Bangla language localization for rural farmers.
+Native Android and iOS mobile applications.
+Advanced analytics dashboard for sellers and admin.
 
 ## 📜 License
-### This project was developed for academic and learning purposes.
-### You may use it for study and reference with proper attribution.
+This project was developed for academic and learning purposes.
+You may use it for study and reference with proper attribution.
